@@ -46,7 +46,9 @@ def books():
         ]
     }
     return render_template('books.html', **context)
-
+@app.route('/my/')
+def my():
+    return render_template('my.html')
 
 @app.route('/contact/')
 @app.route('/contact/<phone>')
